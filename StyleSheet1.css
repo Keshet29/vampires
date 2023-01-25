@@ -4,7 +4,7 @@ ul {
     margin: -10px;
     padding: 0;
     overflow: hidden;
-    background-image: url('../pictures/blood_drip.png');
+    background-image: url('blood_drip.png');
 }
 
 li {
