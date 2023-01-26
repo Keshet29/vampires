@@ -122,10 +122,6 @@ function email2() {
         return true;
     }
 }
-function userName() {
-    var userName1 = userN.value;
-    mydiv.innerHtml = userName1;
-}
 //בדיקה סופית
 function ending() {
     var result = true;

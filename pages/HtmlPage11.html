@@ -2,9 +2,60 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Log-in</title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <script src="JavaScript1.js"></script>
+    <style>
+        body {
+            color: white;
+        }
+    </style>
 </head>
 <body>
-
+    <!--navagition bar-->
+    <ul>
+        <li><a href="HomePage.html">דף הבית</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">יומני הערפד</a>
+            <div class="dropdown-content">
+                <a href="HtmlPage2.html">הסדרה</a>
+                <a href="HtmlPage8.html">דיימון סאלבטור</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">המקוריים</a>
+            <div class="dropdown-content">
+                <a href="HtmlPage3.html">הסדרה</a>
+                <a href="HtmlPage7.html">קלאוס מייקלסון</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">מורשות</a>
+            <div class="dropdown-content">
+                <a href="HtmlPage4.html">הסדרה</a>
+                <a href="HtmlPage9.html">הופ מייקלסון</a>
+            </div>
+        </li>
+    </ul>
+    <form onsubmit="return ending()" action="HtmlPage12.html">
+        <table>
+            <tr>
+                <!-- שם משתמש -->
+                <td>שם משתמש: </td>
+                <td><input type="text" id="userN" name="userN" placeholder="שם משתמש" /></td>
+                <td> <div id="div1"></div></td>
+            </tr>
+            <tr>
+                <!-- סיסמה -->
+                <td>סיסמה:</td>
+                <td><input type="password" id="password1" name="password1" placeholder="סיסמה" /></td>
+                <td> <div id="div2"></div></td>
+            </tr>
+        </table>
+        <button onclick="userName()" type="submit">שלח</button>
+        <button type="reset">אפס</button>
+        <img src="../pictures/heart.png" class="logo" style="width:100px;height:100px;" />
+    </form>
+    רמז: כדי להיכנס לדף הסודי יש לחפש את שם משתמש והסיסמה בדף על אחת הדמויות.
 </body>
 </html>
